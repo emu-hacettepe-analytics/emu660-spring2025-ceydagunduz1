@@ -2,7 +2,7 @@
 title: "Welcome to My Analytics Lab"
 ---
 
-Hello!! My name is xxx xxxx.
+Hello!! My name is Ceyda Gündüz.
 
 This is my personal webpage.
 
