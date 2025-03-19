@@ -21,8 +21,6 @@ website:
             href: project.qmd
             
     tools:
-      - icon: github
-        href: https://twitter.com
       - icon: linkedin
         href: https://www.linkedin.com/in/ceydagunduz/
 

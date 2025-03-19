@@ -31,5 +31,3 @@ sidebar: false
 # Hobbies
 
 -   Reading, Doing puzzles
-
-# CV
