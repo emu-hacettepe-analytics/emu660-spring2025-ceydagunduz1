@@ -6,7 +6,7 @@ My first assignment has two parts.
 
 ## (a) "**Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & Erdi Daşdemir"**
 
-Özeti buraya yazacağız.
+Associate Professor Dr. Mustafa Baydoğan, in his webinar video titled **"Data-Driven Decision Making,"** provided an explanation of the use of data and analytical methods in decision-making processes. He shared examples based on his experiences on how machine learning and deep learning techniques can be applied in prediction and optimization processes. The knowledge and expertise of industrial engineers give them a competitive edge in machine learning-based optimization studies. The topic of **optimization with machine learning** is truly inspiring.
 
 ## (b) Analysis of "mtcars" Dataset
 
@@ -82,4 +82,4 @@ comparison_table <- data.frame(
 print(comparison_table)
 ```
 
-The random data selection method is more appropriate. The results in the step where we changed the place of NA data with random data selection are very close to the results obtained with the original data set. We can see this when we examine the mean and standard deviation values. In the step where we changed the data with the median, the mean and standard deviation decreased. Replacing 145 NA data with the median changed the distribution of the data.
+The random data selection method is more appropriate. The results obtained in the step where we replaced the NA values using random data selection are very close to those obtained with the original dataset. This can be observed when we examine the mean and standard deviation values. However, in the step where we replaced data using the median, both the mean and standard deviation have decreased. Replacing 145 NA values with the median has altered the distribution of the data.

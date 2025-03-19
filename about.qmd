@@ -3,7 +3,7 @@ title: "About Me"
 sidebar: false 
 ---
 
-![](images/CeydaGunduzphoto.jpg){fig-align="left" width="200"}
+![](images/1697743282055.jpg){fig-align="left" width="200"}
 
 # Education
 
@@ -14,20 +14,22 @@ sidebar: false
 
 ## Employements
 
-1.  FNSS-Engineering Planning Engineer(2023-2024)
+-   FNSS-Engineering Planning Engineer(2023-2024)
 
-2.  ASELSAN- Project Evaluation and Analysis Engineer (2024-...)
+-   ASELSAN- Project Evaluation and Analysis Engineer (2024-...)
 
 ## Internships
 
-1.  FNSS- Supply Chain Management-2022
+-   FNSS- Supply Chain Management-2022
 
-2.  Türk Traktör - Production Engineering-2022
+-   Türk Traktör - Production Engineering-2022
 
 # Competencies
 
-R, Quarto, Git, Python, Power BI
+-   R, Quarto, Git, Python, Power BI
 
 # Hobbies
 
-Reading, Doing puzzles
+-   Reading, Doing puzzles
+
+# CV
