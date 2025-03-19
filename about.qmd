@@ -31,3 +31,6 @@ sidebar: false
 # Hobbies
 
 -   Reading, Doing puzzles
+
+# CV
+[Download](images/CV_CG.pdf)
