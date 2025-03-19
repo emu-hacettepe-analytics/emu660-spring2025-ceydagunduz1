@@ -2,14 +2,84 @@
 title: "Assignment 1"
 ---
 
-# Assignment 1
-
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
-## (a)
+## (a) "**Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & Erdi Daşdemir"**
 
-## (b)
+Özeti buraya yazacağız.
+
+## (b) Analysis of "mtcars" Dataset
+
+```{r}
+compute_stats <- function(x) {
+  return(c(
+    mean = mean(x),
+    median = median(x),
+    variance = var(x),
+    IQR = IQR(x),
+    min = min(x),
+    max = max(x)
+  ))
+}
+
+
+data(mtcars)
+
+for (i in names(mtcars)) {
+  stats <- compute_stats(mtcars[[i]])
+  cat("\nColumn: ", i, "\n")
+  print(stats)
+  cat("\n-------------------\n")
+}
+
+
+result_sapply <- sapply(mtcars, compute_stats)
+print(result_sapply)
+
+
+result_apply <- apply(mtcars, 2, compute_stats)
+print(result_apply)
+
+
+library(dslabs)
+data(na_example)
+print(na_example)
+
+
+na_count <- sum(is.na(na_example))
+cat("\n Number of NA:", na_count, "\n")
+
+na_positions <- which(is.na(na_example))
+cat("Index of NA:", na_positions, "\n")
+
+
+mean_without_na <- mean(na_example, na.rm = TRUE)
+sd_without_na <- sd(na_example, na.rm = TRUE)
+
+
+median_value <- median(na_example, na.rm = TRUE)
+na_example_median <- na_example
+na_example_median[is.na(na_example_median)] <- median_value
+mean_median_replacement <- mean(na_example_median)
+sd_median_replacement <- sd(na_example_median)
+
+
+valid_values <- na_example[!is.na(na_example)]
+
+na_example_random <- na_example
+na_example_random[is.na(na_example_random)] <- sample(valid_values, sum(is.na(na_example_random)), replace = TRUE)
+
+mean_na_random <- mean(na_example_random)
+sd_na_random <- sd(na_example_random)
+
+
+comparison_table <- data.frame(
+  Method = c("Without NA", "Median Replacement", "Random Replacement"),
+  Mean = c(mean_without_na, mean_median_replacement, mean_na_random),
+  SD = c(sd_without_na, sd_median_replacement, sd_na_random)
+)
+
+print(comparison_table)
+```
+
+The random data selection method is more appropriate. The results in the step where we changed the place of NA data with random data selection are very close to the results obtained with the original data set. We can see this when we examine the mean and standard deviation values. In the step where we changed the data with the median, the mean and standard deviation decreased. Replacing 145 NA data with the median changed the distribution of the data.
