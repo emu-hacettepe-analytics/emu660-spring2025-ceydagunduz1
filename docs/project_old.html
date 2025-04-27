@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sustainability Goals in Türkiye: Energy, Emissions, and the Future – [Ceyda Gündüz]’s Analytics Lab</title>
+<title>The Sustainability Goal in Turkiye: Energy, Emissions, and the Future – [Ceyda Gündüz]’s Analytics Lab</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,40 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -196,7 +162,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Sustainability Goals in Türkiye: Energy, Emissions, and the Future</h1>
+<h1 class="title">The Sustainability Goal in Turkiye: Energy, Emissions, and the Future</h1>
 </div>
 
 
@@ -213,17 +179,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p><img src="images/WhatsApp Image 2025-04-27 at 15.50.57-01.jpeg" class="img-fluid"></p>
 <section id="project-overview-and-scope" class="level1">
 <h1>1. Project Overview and Scope</h1>
-<blockquote class="blockquote">
+<p><img src="images/WhatsApp Image 2025-04-27 at 15.50.57.jpeg" class="img-fluid" width="632"></p>
 <p>Energy production and consumption are among the primary drivers of climate change, as they are major sources of carbon emissions. The continuous rise in energy demand, fueled by economic growth and industrialization, directly accelerates carbon emissions. In this study, we aim to investigate the relationship between energy consumption and carbon emissions originating from the energy sector in Turkey over the years.</p>
-<p>First, correlation and regression analyses will be conducted to reveal the linear relationship between energy consumption and carbon emissions. Then, time series analysis will be applied to evaluate the trends of emissions and energy consumption over the years, the sectoral distribution of carbon emissions from the energy sector will also be examined, with a particular focus on emissions from electricity generation due to its dominant share.<br>
-Additionally, the relationships between key indicators—such as energy intensity (primary energy consumption/GDP), per capita energy consumption, and per capita carbon emissions—will be analyzed to assess the potential for decoupling carbon emissions from economic growth.</p>
-</blockquote>
+<p>First, correlation and regression analyses will be conducted to reveal the linear relationship between energy consumption and carbon emissions. Then, time series analysis will be applied to evaluate the trends of emissions and energy consumption over the years, the sectoral distribution of carbon emissions from the energy sector will also be examined, with a particular focus on emissions from electricity generation due to its dominant share.\</p>
+<p>Additionally, the relationships between key indicators—such as energy intensity (primary energy consumption/GDP), per capita energy consumption, and per capita carbon emissions—will be analyzed to assess the potential for decoupling carbon emissions from economic growth.</p>
 </section>
 <section id="data" class="level1">
 <h1>2. Data</h1>
+<p>xxxxxx</p>
 <section id="data-source" class="level2">
 <h2 class="anchored" data-anchor-id="data-source">2.1 Data Source</h2>
 <ul>
@@ -241,360 +206,13 @@ Additionally, the relationships between key indicators—such as energy intensit
 </section>
 <section id="reason-of-choice" class="level2">
 <h2 class="anchored" data-anchor-id="reason-of-choice">2.3 Reason of Choice</h2>
-<p>This study has been selected with the aim of contributing to sustainable development goals in line with energy and climate policies.<br>
-In order to shed light on the extent to which carbon-free growth is achievable and how Turkey’s trends over the years align with these goals, this topic has been chosen from the perspectives of energy, environment, and society, particularly given that energy-related emissions constitute a major portion of global warming.<br>
-Raising awareness on this issue is also one of the primary motivations behind the study.</p>
+<p>This study has been selected with the aim of contributing to sustainable development goals in line with energy and climate policies.\</p>
+<p>In order to shed light on the extent to which carbon-free growth is achievable and how Turkey’s trends over the years align with these goals, this topic has been chosen from the perspectives of energy, environment, and society, particularly given that energy-related emissions constitute a major portion of global warming.\</p>
+<p>Raising awareness on this issue is also one of the primary motivations behind the study.</p>
 </section>
 <section id="preprocessing" class="level2">
 <h2 class="anchored" data-anchor-id="preprocessing">2.4 Preprocessing</h2>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readr)</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(readxl)</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>
-Attaching package: 'dplyr'</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:stats':
-
-    filter, lag</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>The following objects are masked from 'package:base':
-
-    intersect, setdiff, setequal, union</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>Co2_emissions_by_sector <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions by sector in Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 207 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (2): CO2 emissions by sector in Turkiye, Units
-dbl (2): Value, Year
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>Co2_emissions_fuel_combustion <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions from fuel combustion, Turkiye (1).csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 23 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"CO2 emissions from fuel combustion, Turkiye",Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(Co2_emissions_fuel_combustion)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"CO2 emissions from fuel combustion, Turkiye",Units: chr [1:23] "2000,201.216,Mt CO2" "2001,182.681,Mt CO2" "2002,192.597,Mt CO2" "2003,203.138,Mt CO2" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"CO2 emissions from fuel combustion, Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>Co2_emissions_per_capita <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions per capita, Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 23 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"CO2 emissions per capita, Turkiye",Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(Co2_emissions_per_capita)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"CO2 emissions per capita, Turkiye",Units: chr [1:23] "2000,3.131,tCO2 / Capita" "2001,2.803,tCO2 / Capita" "2002,2.918,tCO2 / Capita" "2003,3.041,tCO2 / Capita" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"CO2 emissions per capita, Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>electricity_cons_per_capita <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Electricity consumption per capita, Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 24 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"Electricity consumption per capita, Turkiye",Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(electricity_cons_per_capita)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [24 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"Electricity consumption per capita, Turkiye",Units: chr [1:24] "2000,1.626,MWh / Capita" "2001,1.589,MWh / Capita" "2002,1.646,MWh / Capita" "2003,1.753,MWh / Capita" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"Electricity consumption per capita, Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>electricity_final_consumption <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity final consumption by sector in Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 138 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (2): electricity final consumption by sector in Turkiye, Units
-dbl (2): Value, Year
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(electricity_final_consumption)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [138 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ electricity final consumption by sector in Turkiye: chr [1:138] "Industry" "Industry" "Industry" "Industry" ...
- $ Value                                             : num [1:138] 165920 161992 175953 193309 208951 ...
- $ Year                                              : num [1:138] 2000 2001 2002 2003 2004 ...
- $ Units                                             : chr [1:138] "TJ" "TJ" "TJ" "TJ" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `electricity final consumption by sector in Turkiye` = col_character(),
-  ..   Value = col_double(),
-  ..   Year = col_double(),
-  ..   Units = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(<span class="fu">is.na</span>(electricity_final_consumption))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 4</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>electricity_generation_sources <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity generation sources in Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 240 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (2): electricity generation sources in Turkiye, Units
-dbl (2): Value, Year
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(electricity_generation_sources)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [240 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ electricity generation sources in Turkiye: chr [1:240] "Coal" "Coal" "Coal" "Coal" ...
- $ Value                                    : num [1:240] 38187 38416 32149 32252 34448 ...
- $ Year                                     : num [1:240] 2000 2001 2002 2003 2004 ...
- $ Units                                    : chr [1:240] "GWh" "GWh" "GWh" "GWh" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `electricity generation sources in Turkiye` = col_character(),
-  ..   Value = col_double(),
-  ..   Year = col_double(),
-  ..   Units = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>renewables <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Renewables share of electricity generation, Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 23 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"Renewables share of electricity generation, Turkiye",Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(renewables)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"Renewables share of electricity generation, Turkiye",Units: chr [1:23] "2000,24.9,%" "2001,19.8,%" "2002,26.2,%" "2003,25.3,%" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"Renewables share of electricity generation, Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a>modern_renewables <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Share of modern renewables in final energy consumption (SDG 7.2), Turkiye (1).csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 22 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"Share of modern renewables in final energy consumption (SDG 7...
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(modern_renewables)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [22 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"Share of modern renewables in final energy consumption (SDG 7.2), Turkiye",Units: chr [1:22] "2000,17.29,%" "2001,18.12,%" "2002,17.49,%" "2003,16.29,%" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"Share of modern renewables in final energy consumption (SDG 7.2), Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>electricity_production <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Total electricity production, Turkiye.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 24 Columns: 1
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (1): Year,"Total electricity production, Turkiye",Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(electricity_production)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [24 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ Year,"Total electricity production, Turkiye",Units: chr [1:24] "2000,124922,GWh" "2001,122725,GWh" "2002,129400,GWh" "2003,140581,GWh" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `Year,"Total electricity production, Turkiye",Units` = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb47"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a>total_energy_supply <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - total energy supply in Turkiye (2).csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Warning: One or more parsing issues, call `problems()` on your data frame for details,
-e.g.:
-  dat &lt;- vroom(...)
-  problems(dat)</code></pre>
-</div>
-<div class="cell-output cell-output-stderr">
-<pre><code>Rows: 144 Columns: 4
-── Column specification ────────────────────────────────────────────────────────
-Delimiter: ","
-chr (4): total energy supply in Turkiye, Value, Year, Units
-
-ℹ Use `spec()` to retrieve the full column specification for this data.
-ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(total_energy_supply)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>spc_tbl_ [144 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)
- $ total energy supply in Turkiye: chr [1:144] "Coal" "Coal" "Coal" "Coal" ...
- $ Value                         : chr [1:144] "956056" "789821" "820271" "923904" ...
- $ Year                          : chr [1:144] "2000" "2001" "2002" "2003" ...
- $ Units                         : chr [1:144] "TJ" "TJ" "TJ" "TJ" ...
- - attr(*, "spec")=
-  .. cols(
-  ..   `total energy supply in Turkiye` = col_character(),
-  ..   Value = col_character(),
-  ..   Year = col_character(),
-  ..   Units = col_character()
-  .. )
- - attr(*, "problems")=&lt;externalptr&gt; </code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>gdp_per_capita <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/gdp_per_capita.xlsx"</span>)  </span>
-<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>gdp_per_capita <span class="ot">&lt;-</span> gdp_per_capita <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span><span class="fu">ncol</span>(gdp_per_capita),<span class="sc">-</span>(<span class="fu">ncol</span>(gdp_per_capita)<span class="sc">-</span><span class="dv">1</span>)</span>
-<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(gdp_per_capita)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [27 × 4] (S3: tbl_df/tbl/data.frame)
- $ Year               : chr [1:27] "1998" "1999" "2000" "2001" ...
- $ mid_year_population: num [1:27] 62464 63364 64269 65166 66003 ...
- $ Value (TRY)        : num [1:27] 1152 1695 2668 3794 5486 ...
- $ change_rate_try    : chr [1:27] "-" "47.125712213558103" "57.467281288589533" "42.198751767167977" ...</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a>emissions_by_sector <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sektorlere gore toplam sera gazi emisyonlari (co2 esdegeri) (1).xlsx"</span>)  </span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>emissions_by_sector <span class="ot">&lt;-</span> emissions_by_sector <span class="sc">|&gt;</span> <span class="fu">select</span>(<span class="sc">-</span><span class="dv">3</span>)</span>
-<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(emissions_by_sector)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [34 × 6] (S3: tbl_df/tbl/data.frame)
- $ Year                                : num [1:34] 1990 1991 1992 1993 1994 ...
- $ Total                               : num [1:34] 228 236 242 250 243 ...
- $ Energy                              : num [1:34] 143 148 154 160 157 ...
- $ Industrial processes and product use: num [1:34] 23.1 24.9 24.6 25.1 24.5 ...
- $ Agriculture                         : num [1:34] 51.8 52.9 52.7 52.8 50.3 ...
- $ Waste                               : num [1:34] 10.3 10.7 11 11.3 11.7 ...</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>emissions <span class="ot">&lt;-</span> <span class="fu">read_excel</span>(<span class="st">"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sera gazi emisyonlari (co2 esdegeri).xlsx"</span>)  </span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="fu">str</span>(emissions)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>tibble [34 × 6] (S3: tbl_df/tbl/data.frame)
- $ 
-Year   : num [1:34] 1990 1991 1992 1993 1994 ...
- $ 
-Total  : num [1:34] 228 236 242 250 243 ...
- $ CO2        : num [1:34] 155 161 167 174 171 ...
- $ CH4        : num [1:34] 51.3 52.3 52.2 51.8 51.3 ...
- $ N2O        : num [1:34] 22.2 22 22.4 23.2 20.9 ...
- $ 
-F-gases: num [1:34] 0.425 0.5 0.467 0.466 0.417 ...</code></pre>
-</div>
-</div>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">save</span>(Co2_emissions_by_sector, Co2_emissions_fuel_combustion, Co2_emissions_per_capita, electricity_cons_per_capita, electricity_final_consumption, electricity_generation_sources, renewables, modern_renewables, electricity_production, total_energy_supply,gdp_per_capita, emissions_by_sector, emissions, <span class="at">file=</span><span class="st">"emissions.RData"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p>xxxxxx</p>
 </section>
 </section>
 <section id="analysis" class="level1">
