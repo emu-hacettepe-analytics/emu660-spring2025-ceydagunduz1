@@ -42,7 +42,7 @@ Raising awareness on this issue is also one of the primary motivations behind th
 
 ## 2.4 Preprocessing
 
-[My_R_Data](https://github.com/emu-hacettepe-analytics/emu660-spring2025-ceydagunduz1/blob/main/emissions.RData)
+-   [My_R_Data](https://github.com/emu-hacettepe-analytics/emu660-spring2025-ceydagunduz1/blob/main/emissions.RData)
 
 ```{r}
 
