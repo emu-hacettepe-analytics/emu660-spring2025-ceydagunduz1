@@ -30,8 +30,6 @@ format:
 
 -   [IEA Türkiye Yenilenebilir Enerji Kaynakları Verisi](https://www.iea.org/countries/turkiye/renewables)
 
--   [My_R_Data](https://github.com/emu-hacettepe-analytics/emu660-spring2025-ceydagunduz1/blob/main/emissions.RData)
-
 ## 2.2 General Information About Data
 
 The data obtained from TÜİK provide information on the sectoral distribution of carbon emissions in Türkiye over the years, as well as GDP figures necessary for calculating energy intensity. Additionally, the data gathered from the IEA include Türkiye's total primary energy supply, annual energy amounts by source, energy-related carbon emissions, the carbon intensity of the energy mix, per capita carbon emissions, electricity generation and consumption figures, and the share of renewable energy sources in electricity generation.
@@ -43,6 +41,8 @@ In order to shed light on the extent to which carbon-free growth is achievable a
 Raising awareness on this issue is also one of the primary motivations behind the study.
 
 ## 2.4 Preprocessing
+
+-   [My_R_Data](https://github.com/emu-hacettepe-analytics/emu660-spring2025-ceydagunduz1/blob/main/emissions.RData)
 
 ```{r}
 
