@@ -1,0 +1,199 @@
+[
+  {
+    "objectID": "project_old.html",
+    "href": "project_old.html",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "",
+    "text": "Energy production and consumption are among the primary drivers of climate change, as they are major sources of carbon emissions. The continuous rise in energy demand, fueled by economic growth and industrialization, directly accelerates carbon emissions. In this study, we aim to investigate the relationship between energy consumption and carbon emissions originating from the energy sector in Turkey over the years.\nFirst, correlation and regression analyses will be conducted to reveal the linear relationship between energy consumption and carbon emissions. Then, time series analysis will be applied to evaluate the trends of emissions and energy consumption over the years, the sectoral distribution of carbon emissions from the energy sector will also be examined, with a particular focus on emissions from electricity generation due to its dominant share.\\\nAdditionally, the relationships between key indicators—such as energy intensity (primary energy consumption/GDP), per capita energy consumption, and per capita carbon emissions—will be analyzed to assess the potential for decoupling carbon emissions from economic growth."
+  },
+  {
+    "objectID": "project_old.html#data-source",
+    "href": "project_old.html#data-source",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "2.1 Data Source",
+    "text": "2.1 Data Source\n\nSera Gazı Emisyon İstatistikleri\nGayri Safi Yurtiçi Hasıla ve Kişi Başına Gayri Safi Yurtiçi Hasıla\nIEA Türkiye Enerji İstatistikleri\nIEA Enerji Kaynaklı Emisyonlar\nIEA Elektrik Üretim ve Tüketim Verileri\nIEA Türkiye Yenilenebilir Enerji Kaynakları Verisi"
+  },
+  {
+    "objectID": "project_old.html#general-information-about-data",
+    "href": "project_old.html#general-information-about-data",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "2.2 General Information About Data",
+    "text": "2.2 General Information About Data\nThe data obtained from TÜİK provide information on the sectoral distribution of carbon emissions in Türkiye over the years, as well as GDP figures necessary for calculating energy intensity. Additionally, the data gathered from the IEA include Türkiye’s total primary energy supply, annual energy amounts by source, energy-related carbon emissions, the carbon intensity of the energy mix, per capita carbon emissions, electricity generation and consumption figures, and the share of renewable energy sources in electricity generation."
+  },
+  {
+    "objectID": "project_old.html#reason-of-choice",
+    "href": "project_old.html#reason-of-choice",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "2.3 Reason of Choice",
+    "text": "2.3 Reason of Choice\nThis study has been selected with the aim of contributing to sustainable development goals in line with energy and climate policies.\\\nIn order to shed light on the extent to which carbon-free growth is achievable and how Turkey’s trends over the years align with these goals, this topic has been chosen from the perspectives of energy, environment, and society, particularly given that energy-related emissions constitute a major portion of global warming.\\\nRaising awareness on this issue is also one of the primary motivations behind the study."
+  },
+  {
+    "objectID": "project_old.html#preprocessing",
+    "href": "project_old.html#preprocessing",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "2.4 Preprocessing",
+    "text": "2.4 Preprocessing\nxxxxxx"
+  },
+  {
+    "objectID": "project_old.html#exploratory-data-analysis",
+    "href": "project_old.html#exploratory-data-analysis",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project_old.html#trend-analysis",
+    "href": "project_old.html#trend-analysis",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project_old.html#model-fitting",
+    "href": "project_old.html#model-fitting",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "project_old.html#results",
+    "href": "project_old.html#results",
+    "title": "The Sustainability Goal in Turkiye: Energy, Emissions, and the Future",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
+  },
+  {
+    "objectID": "posts.html",
+    "href": "posts.html",
+    "title": "My Blog",
+    "section": "",
+    "text": "This page is under construction.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assignments.html",
+    "href": "assignments.html",
+    "title": "My Assignments",
+    "section": "",
+    "text": "On this page, I showcase the assignment I conducted for the [term and year, e.g. Spring 2024-2025] EMU660 Decision Making with Analytics course.\nPlease use left menu to navigate through my assignments.\n\n\n\n Back to top",
+    "crumbs": [
+      "My Assignments"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html",
+    "href": "assignments/assignment-1.html",
+    "title": "Assignment 1",
+    "section": "",
+    "text": "My first assignment has two parts.",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---mustafa-baydoğan-erdi-daşdemir",
+    "href": "assignments/assignment-1.html#a-veri-bilimi-ve-endüstri-mühendisliği-üzerine-sohbetler---mustafa-baydoğan-erdi-daşdemir",
+    "title": "Assignment 1",
+    "section": "(a) “Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & Erdi Daşdemir”",
+    "text": "(a) “Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler - Mustafa Baydoğan & Erdi Daşdemir”\nAssociate Professor Dr. Mustafa Baydoğan, in his webinar video titled “Data-Driven Decision Making,” provided an explanation of the use of data and analytical methods in decision-making processes. He shared examples based on his experiences on how machine learning and deep learning techniques can be applied in prediction and optimization processes. The knowledge and expertise of industrial engineers give them a competitive edge in machine learning-based optimization studies. The topic of optimization with machine learning is truly inspiring.",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "assignments/assignment-1.html#b-analysis-of-mtcars-dataset",
+    "href": "assignments/assignment-1.html#b-analysis-of-mtcars-dataset",
+    "title": "Assignment 1",
+    "section": "(b) Analysis of “mtcars” Dataset",
+    "text": "(b) Analysis of “mtcars” Dataset\n\ncompute_stats &lt;- function(x) {\n  return(c(\n    mean = mean(x),\n    median = median(x),\n    variance = var(x),\n    IQR = IQR(x),\n    min = min(x),\n    max = max(x)\n  ))\n}\n\n\ndata(mtcars)\n\nfor (i in names(mtcars)) {\n  stats &lt;- compute_stats(mtcars[[i]])\n  cat(\"\\nColumn: \", i, \"\\n\")\n  print(stats)\n  cat(\"\\n-------------------\\n\")\n}\n\n\nColumn:  mpg \n    mean   median variance      IQR      min      max \n20.09062 19.20000 36.32410  7.37500 10.40000 33.90000 \n\n-------------------\n\nColumn:  cyl \n    mean   median variance      IQR      min      max \n6.187500 6.000000 3.189516 4.000000 4.000000 8.000000 \n\n-------------------\n\nColumn:  disp \n      mean     median   variance        IQR        min        max \n  230.7219   196.3000 15360.7998   205.1750    71.1000   472.0000 \n\n-------------------\n\nColumn:  hp \n     mean    median  variance       IQR       min       max \n 146.6875  123.0000 4700.8669   83.5000   52.0000  335.0000 \n\n-------------------\n\nColumn:  drat \n     mean    median  variance       IQR       min       max \n3.5965625 3.6950000 0.2858814 0.8400000 2.7600000 4.9300000 \n\n-------------------\n\nColumn:  wt \n    mean   median variance      IQR      min      max \n3.217250 3.325000 0.957379 1.028750 1.513000 5.424000 \n\n-------------------\n\nColumn:  qsec \n     mean    median  variance       IQR       min       max \n17.848750 17.710000  3.193166  2.007500 14.500000 22.900000 \n\n-------------------\n\nColumn:  vs \n     mean    median  variance       IQR       min       max \n0.4375000 0.0000000 0.2540323 1.0000000 0.0000000 1.0000000 \n\n-------------------\n\nColumn:  am \n     mean    median  variance       IQR       min       max \n0.4062500 0.0000000 0.2489919 1.0000000 0.0000000 1.0000000 \n\n-------------------\n\nColumn:  gear \n     mean    median  variance       IQR       min       max \n3.6875000 4.0000000 0.5443548 1.0000000 3.0000000 5.0000000 \n\n-------------------\n\nColumn:  carb \n    mean   median variance      IQR      min      max \n2.812500 2.000000 2.608871 2.000000 1.000000 8.000000 \n\n-------------------\n\nresult_sapply &lt;- sapply(mtcars, compute_stats)\nprint(result_sapply)\n\n              mpg      cyl       disp        hp      drat       wt      qsec\nmean     20.09062 6.187500   230.7219  146.6875 3.5965625 3.217250 17.848750\nmedian   19.20000 6.000000   196.3000  123.0000 3.6950000 3.325000 17.710000\nvariance 36.32410 3.189516 15360.7998 4700.8669 0.2858814 0.957379  3.193166\nIQR       7.37500 4.000000   205.1750   83.5000 0.8400000 1.028750  2.007500\nmin      10.40000 4.000000    71.1000   52.0000 2.7600000 1.513000 14.500000\nmax      33.90000 8.000000   472.0000  335.0000 4.9300000 5.424000 22.900000\n                vs        am      gear     carb\nmean     0.4375000 0.4062500 3.6875000 2.812500\nmedian   0.0000000 0.0000000 4.0000000 2.000000\nvariance 0.2540323 0.2489919 0.5443548 2.608871\nIQR      1.0000000 1.0000000 1.0000000 2.000000\nmin      0.0000000 0.0000000 3.0000000 1.000000\nmax      1.0000000 1.0000000 5.0000000 8.000000\n\nresult_apply &lt;- apply(mtcars, 2, compute_stats)\nprint(result_apply)\n\n              mpg      cyl       disp        hp      drat       wt      qsec\nmean     20.09062 6.187500   230.7219  146.6875 3.5965625 3.217250 17.848750\nmedian   19.20000 6.000000   196.3000  123.0000 3.6950000 3.325000 17.710000\nvariance 36.32410 3.189516 15360.7998 4700.8669 0.2858814 0.957379  3.193166\nIQR       7.37500 4.000000   205.1750   83.5000 0.8400000 1.028750  2.007500\nmin      10.40000 4.000000    71.1000   52.0000 2.7600000 1.513000 14.500000\nmax      33.90000 8.000000   472.0000  335.0000 4.9300000 5.424000 22.900000\n                vs        am      gear     carb\nmean     0.4375000 0.4062500 3.6875000 2.812500\nmedian   0.0000000 0.0000000 4.0000000 2.000000\nvariance 0.2540323 0.2489919 0.5443548 2.608871\nIQR      1.0000000 1.0000000 1.0000000 2.000000\nmin      0.0000000 0.0000000 3.0000000 1.000000\nmax      1.0000000 1.0000000 5.0000000 8.000000\n\nlibrary(dslabs)\ndata(na_example)\nprint(na_example)\n\n   [1]  2  1  3  2  1  3  1  4  3  2  2 NA  2  2  1  4 NA  1  1  2  1  2  2  1\n  [25]  2  5 NA  2  2  3  1  2  4  1  1  1  4  5  2  3  4  1  2  4  1  1  2  1\n  [49]  5 NA NA NA  1  1  5  1  3  1 NA  4  4  7  3  2 NA NA  1 NA  4  1  2  2\n  [73]  3  2  1  2  2  4  3  4  2  3  1  3  2  1  1  1  3  1 NA  3  1  2  2  1\n  [97]  2  2  1  1  4  1  1  2  3  3  2  2  3  3  3  4  1  1  1  2 NA  4  3  4\n [121]  3  1  2  1 NA NA NA NA  1  5  1  2  1  3  5  3  2  2 NA NA NA NA  3  5\n [145]  3  1  1  4  2  4  3  3 NA  2  3  2  6 NA  1  1  2  2  1  3  1  1  5 NA\n [169] NA  2  4 NA  2  5  1  4  3  3 NA  4  3  1  4  1  1  3  1  1 NA NA  3  5\n [193]  2  2  2  3  1  2  2  3  2  1 NA  2 NA  1 NA NA  2  1  1 NA  3 NA  1  2\n [217]  2  1  3  2  2  1  1  2  3  1  1  1  4  3  4  2  2  1  4  1 NA  5  1  4\n [241] NA  3 NA NA  1  1  5  2  3  3  2  4 NA  3  2  5 NA  2  3  4  6  2  2  2\n [265] NA  2 NA  2 NA  3  3  2  2  4  3  1  4  2 NA  2  4 NA  6  2  3  1 NA  2\n [289]  2 NA  1  1  3  2  3  3  1 NA  1  4  2  1  1  3  2  1  2  3  1 NA  2  3\n [313]  3  2  1  2  3  5  5  1  2  3  3  1 NA NA  1  2  4 NA  2  1  1  1  3  2\n [337]  1  1  3  4 NA  1  2  1  1  3  3 NA  1  1  3  5  3  2  3  4  1  4  3  1\n [361] NA  2  1  2  2  1  2  2  6  1  2  4  5 NA  3  4  2  1  1  4  2  1  1  1\n [385]  1  2  1  4  4  1  3 NA  3  3 NA  2 NA  1  2  1  1  4  2  1  4  4 NA  1\n [409]  2 NA  3  2  2  2  1  4  3  6  1  2  3  1  3  2  2  2  1  1  3  2  1  1\n [433]  1  3  2  2 NA  4  4  4  1  1 NA  4  3 NA  1  3  1  3  2  4  2  2  2  3\n [457]  2  1  4  3 NA  1  4  3  1  3  2 NA  3 NA  1  3  1  4  1  1  1  2  4  3\n [481]  1  2  2  2  3  2  3  1  1 NA  3  2  1  1  2 NA  2  2  2  3  3  1  1  2\n [505] NA  1  2  1  1  3  3  1  3  1  1  1  1  1  2  5  1  1  2  2  1  1 NA  1\n [529]  4  1  2  4  1  3  2 NA  1  1 NA  2  1  1  4  2  3  3  1  5  3  1  1  2\n [553] NA  1  1  3  1  3  2  4 NA  2  3  2  1  2  1  1  1  2  2  3  1  5  2 NA\n [577]  2 NA  3  2  2  2  1  5  3  2  3  1 NA  3  1  2  2  2  1  2  2  4 NA  6\n [601]  1  2 NA  1  1  2  2  3 NA  3  2  3  3  4  2 NA  2 NA  4 NA  1  1  2  2\n [625]  3  1  1  1  3 NA  2  5 NA  7  1 NA  4  3  3  1 NA  1  1  1  1  3  2  4\n [649]  2  2  3 NA NA  1  4  3  2  2  2  3  2  4  2  2  4 NA NA NA  6  3  3  1\n [673]  4  4  2  1 NA  1  6 NA  3  3  2  1  1  6 NA  1  5  1 NA  2  6  2 NA  4\n [697]  1  3  1  2 NA  1  1  3  1  2  4  2  1  3  2  4  3  2  2  1  1  5  6  4\n [721]  2  2  2  2  4 NA  1  2  2  2  2  4  5 NA NA NA  4  3  3  3  2  4  2  4\n [745] NA NA NA NA  2  1 NA  2  4  3  2 NA  2  3  1  3  4 NA  1  2  1  2 NA  3\n [769]  1  2  1  2  1  2  1  2  2  2  2  1  1  3  3  1  3  4  3 NA NA  4  2  3\n [793]  2  1  3  2  4  2  2  3  1  2  4  3  3  4 NA  1  4  2  1  1  1  3  1  5\n [817]  2  2  4  2 NA  1  3  1  2 NA  1  2  1  2  1 NA  1  3  2  3  2 NA  2  1\n [841]  4  2 NA NA NA  2  4  2 NA NA  3  1 NA  5  5  2  2  2 NA  2  1  3  1  3\n [865]  2  4  2  4 NA  4  1  2  3  2  3  3  2  3  2  2  2  1  3  2  4  2 NA  3\n [889]  3  2  2 NA NA  3  2  1  2  4  1  1  1  1  4  3  2 NA  3  2 NA  1 NA  3\n [913]  2  1  1  1  2 NA  2  2  3  3  2 NA NA  4  5  2  2  2  1  2  3  1  3  3\n [937]  4  3 NA  1  1  1 NA  4  3  5  1  1  2 NA  2  2  2  2  5  2  2  3  1  2\n [961]  3 NA  1  2 NA NA  2 NA  3  1  1  2  5  3  5  1  1  4 NA  2  1  3  1  1\n [985]  2  4  3  3  3 NA  1  1  2  2  1  1  2  2 NA  2\n\nna_count &lt;- sum(is.na(na_example))\ncat(\"\\n Number of NA:\", na_count, \"\\n\")\n\n\n Number of NA: 145 \n\nna_positions &lt;- which(is.na(na_example))\ncat(\"Index of NA:\", na_positions, \"\\n\")\n\nIndex of NA: 12 17 27 50 51 52 59 65 66 68 91 117 125 126 127 128 139 140 141 142 153 158 168 169 172 179 189 190 203 205 207 208 212 214 237 241 243 244 253 257 265 267 269 279 282 287 290 298 310 325 326 330 341 348 361 374 392 395 397 407 410 437 443 446 461 468 470 490 496 505 527 536 539 553 561 576 578 589 599 603 609 616 618 620 630 633 636 641 652 653 666 667 668 677 680 687 691 695 701 726 734 735 736 745 746 747 748 751 756 762 767 788 789 807 821 826 832 838 843 844 845 849 850 853 859 869 887 892 893 906 909 911 918 924 925 939 943 950 962 965 966 968 979 990 999 \n\nmean_without_na &lt;- mean(na_example, na.rm = TRUE)\nsd_without_na &lt;- sd(na_example, na.rm = TRUE)\n\n\nmedian_value &lt;- median(na_example, na.rm = TRUE)\nna_example_median &lt;- na_example\nna_example_median[is.na(na_example_median)] &lt;- median_value\nmean_median_replacement &lt;- mean(na_example_median)\nsd_median_replacement &lt;- sd(na_example_median)\n\n\nvalid_values &lt;- na_example[!is.na(na_example)]\n\nna_example_random &lt;- na_example\nna_example_random[is.na(na_example_random)] &lt;- sample(valid_values, sum(is.na(na_example_random)), replace = TRUE)\n\nmean_na_random &lt;- mean(na_example_random)\nsd_na_random &lt;- sd(na_example_random)\n\n\ncomparison_table &lt;- data.frame(\n  Method = c(\"Without NA\", \"Median Replacement\", \"Random Replacement\"),\n  Mean = c(mean_without_na, mean_median_replacement, mean_na_random),\n  SD = c(sd_without_na, sd_median_replacement, sd_na_random)\n)\n\nprint(comparison_table)\n\n              Method     Mean       SD\n1         Without NA 2.301754 1.223380\n2 Median Replacement 2.258000 1.136102\n3 Random Replacement 2.289000 1.208693\n\n\nThe random data selection method is more appropriate. The results obtained in the step where we replaced the NA values using random data selection are very close to those obtained with the original dataset. This can be observed when we examine the mean and standard deviation values. However, in the step where we replaced data using the median, both the mean and standard deviation have decreased. Replacing 145 NA values with the median has altered the distribution of the data.",
+    "crumbs": [
+      "Assignment 1"
+    ]
+  },
+  {
+    "objectID": "about.html#employements",
+    "href": "about.html#employements",
+    "title": "About Me",
+    "section": "Employements",
+    "text": "Employements\n\nFNSS-Engineering Planning Engineer(2023-2024)\nASELSAN- Project Evaluation and Analysis Engineer (2024-…)"
+  },
+  {
+    "objectID": "about.html#internships",
+    "href": "about.html#internships",
+    "title": "About Me",
+    "section": "Internships",
+    "text": "Internships\n\nFNSS- Supply Chain Management-2022\nTürk Traktör - Production Engineering-2022"
+  },
+  {
+    "objectID": "assignments/assignment-2.html",
+    "href": "assignments/assignment-2.html",
+    "title": "Assignment 2",
+    "section": "",
+    "text": "Assignment 2\n\n1 + 1\n\n[1] 2\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Assignment 2"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to My Analytics Lab",
+    "section": "",
+    "text": "Hello!! My name is Ceyda Gündüz.\nThis is my personal webpage.\nPlease stay tuned to follow my works on data analytics, blog posts, and more.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "project.html#data-source",
+    "href": "project.html#data-source",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "2.1 Data Source",
+    "text": "2.1 Data Source\n\nSera Gazı Emisyon İstatistikleri\nGayri Safi Yurtiçi Hasıla ve Kişi Başına Gayri Safi Yurtiçi Hasıla\nIEA Türkiye Enerji İstatistikleri\nIEA Enerji Kaynaklı Emisyonlar\nIEA Elektrik Üretim ve Tüketim Verileri\nIEA Türkiye Yenilenebilir Enerji Kaynakları Verisi"
+  },
+  {
+    "objectID": "project.html#general-information-about-data",
+    "href": "project.html#general-information-about-data",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "2.2 General Information About Data",
+    "text": "2.2 General Information About Data\nThe data obtained from TÜİK provide information on the sectoral distribution of carbon emissions in Türkiye over the years, as well as GDP figures necessary for calculating energy intensity. Additionally, the data gathered from the IEA include Türkiye’s total primary energy supply, annual energy amounts by source, energy-related carbon emissions, the carbon intensity of the energy mix, per capita carbon emissions, electricity generation and consumption figures, and the share of renewable energy sources in electricity generation."
+  },
+  {
+    "objectID": "project.html#reason-of-choice",
+    "href": "project.html#reason-of-choice",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "2.3 Reason of Choice",
+    "text": "2.3 Reason of Choice\nThis study has been selected with the aim of contributing to sustainable development goals in line with energy and climate policies.\nIn order to shed light on the extent to which carbon-free growth is achievable and how Turkey’s trends over the years align with these goals, this topic has been chosen from the perspectives of energy, environment, and society, particularly given that energy-related emissions constitute a major portion of global warming.\nRaising awareness on this issue is also one of the primary motivations behind the study."
+  },
+  {
+    "objectID": "project.html#preprocessing",
+    "href": "project.html#preprocessing",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "2.4 Preprocessing",
+    "text": "2.4 Preprocessing\n\nMy_R_Data\n\n\n\nCode\nlibrary(readr)\nlibrary(readxl)\nlibrary(dplyr)\n\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union\n\n\n\n\nCode\nCo2_emissions_by_sector &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions by sector in Turkiye.csv\",show_col_types = FALSE)\n\n\n\n\nCode\nCo2_emissions_fuel_combustion &lt;- read_delim(\n  \"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions from fuel combustion, Turkiye (1).csv\",\n  delim = \",\",\n  show_col_types = FALSE\n)\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nCode\nstr(Co2_emissions_fuel_combustion)\n\n\nspc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"CO2 emissions from fuel combustion, Turkiye\",Units: chr [1:23] \"2000,201.216,Mt CO2\" \"2001,182.681,Mt CO2\" \"2002,192.597,Mt CO2\" \"2003,203.138,Mt CO2\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"CO2 emissions from fuel combustion, Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nCo2_emissions_per_capita &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions per capita, Turkiye.csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 23 Columns: 1\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): Year,\"CO2 emissions per capita, Turkiye\",Units\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(Co2_emissions_per_capita)\n\n\nspc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"CO2 emissions per capita, Turkiye\",Units: chr [1:23] \"2000,3.131,tCO2 / Capita\" \"2001,2.803,tCO2 / Capita\" \"2002,2.918,tCO2 / Capita\" \"2003,3.041,tCO2 / Capita\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"CO2 emissions per capita, Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nelectricity_cons_per_capita &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Electricity consumption per capita, Turkiye.csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 24 Columns: 1\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): Year,\"Electricity consumption per capita, Turkiye\",Units\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(electricity_cons_per_capita)\n\n\nspc_tbl_ [24 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"Electricity consumption per capita, Turkiye\",Units: chr [1:24] \"2000,1.626,MWh / Capita\" \"2001,1.589,MWh / Capita\" \"2002,1.646,MWh / Capita\" \"2003,1.753,MWh / Capita\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"Electricity consumption per capita, Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nelectricity_final_consumption &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity final consumption by sector in Turkiye.csv\")\n\n\nRows: 138 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): electricity final consumption by sector in Turkiye, Units\ndbl (2): Value, Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(electricity_final_consumption)\n\n\nspc_tbl_ [138 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ electricity final consumption by sector in Turkiye: chr [1:138] \"Industry\" \"Industry\" \"Industry\" \"Industry\" ...\n $ Value                                             : num [1:138] 165920 161992 175953 193309 208951 ...\n $ Year                                              : num [1:138] 2000 2001 2002 2003 2004 ...\n $ Units                                             : chr [1:138] \"TJ\" \"TJ\" \"TJ\" \"TJ\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `electricity final consumption by sector in Turkiye` = col_character(),\n  ..   Value = col_double(),\n  ..   Year = col_double(),\n  ..   Units = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\nCode\nsum(is.na(electricity_final_consumption))\n\n\n[1] 4\n\n\n\n\nCode\nelectricity_generation_sources &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity generation sources in Turkiye.csv\")\n\n\nRows: 240 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (2): electricity generation sources in Turkiye, Units\ndbl (2): Value, Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(electricity_generation_sources)\n\n\nspc_tbl_ [240 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ electricity generation sources in Turkiye: chr [1:240] \"Coal\" \"Coal\" \"Coal\" \"Coal\" ...\n $ Value                                    : num [1:240] 38187 38416 32149 32252 34448 ...\n $ Year                                     : num [1:240] 2000 2001 2002 2003 2004 ...\n $ Units                                    : chr [1:240] \"GWh\" \"GWh\" \"GWh\" \"GWh\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `electricity generation sources in Turkiye` = col_character(),\n  ..   Value = col_double(),\n  ..   Year = col_double(),\n  ..   Units = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nrenewables &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Renewables share of electricity generation, Turkiye.csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 23 Columns: 1\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): Year,\"Renewables share of electricity generation, Turkiye\",Units\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(renewables)\n\n\nspc_tbl_ [23 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"Renewables share of electricity generation, Turkiye\",Units: chr [1:23] \"2000,24.9,%\" \"2001,19.8,%\" \"2002,26.2,%\" \"2003,25.3,%\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"Renewables share of electricity generation, Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nmodern_renewables &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Share of modern renewables in final energy consumption (SDG 7.2), Turkiye (1).csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 22 Columns: 1\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): Year,\"Share of modern renewables in final energy consumption (SDG 7...\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(modern_renewables)\n\n\nspc_tbl_ [22 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"Share of modern renewables in final energy consumption (SDG 7.2), Turkiye\",Units: chr [1:22] \"2000,17.29,%\" \"2001,18.12,%\" \"2002,17.49,%\" \"2003,16.29,%\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"Share of modern renewables in final energy consumption (SDG 7.2), Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\nelectricity_production &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Total electricity production, Turkiye.csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 24 Columns: 1\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (1): Year,\"Total electricity production, Turkiye\",Units\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(electricity_production)\n\n\nspc_tbl_ [24 × 1] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ Year,\"Total electricity production, Turkiye\",Units: chr [1:24] \"2000,124922,GWh\" \"2001,122725,GWh\" \"2002,129400,GWh\" \"2003,140581,GWh\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `Year,\"Total electricity production, Turkiye\",Units` = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\ntotal_energy_supply &lt;- read_csv(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - total energy supply in Turkiye (2).csv\")\n\n\nWarning: One or more parsing issues, call `problems()` on your data frame for details,\ne.g.:\n  dat &lt;- vroom(...)\n  problems(dat)\n\n\nRows: 144 Columns: 4\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (4): total energy supply in Turkiye, Value, Year, Units\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.\n\n\nCode\nstr(total_energy_supply)\n\n\nspc_tbl_ [144 × 4] (S3: spec_tbl_df/tbl_df/tbl/data.frame)\n $ total energy supply in Turkiye: chr [1:144] \"Coal\" \"Coal\" \"Coal\" \"Coal\" ...\n $ Value                         : chr [1:144] \"956056\" \"789821\" \"820271\" \"923904\" ...\n $ Year                          : chr [1:144] \"2000\" \"2001\" \"2002\" \"2003\" ...\n $ Units                         : chr [1:144] \"TJ\" \"TJ\" \"TJ\" \"TJ\" ...\n - attr(*, \"spec\")=\n  .. cols(\n  ..   `total energy supply in Turkiye` = col_character(),\n  ..   Value = col_character(),\n  ..   Year = col_character(),\n  ..   Units = col_character()\n  .. )\n - attr(*, \"problems\")=&lt;externalptr&gt; \n\n\n\n\nCode\ngdp_per_capita &lt;- read_excel(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/gdp_per_capita.xlsx\")  \n  \ngdp_per_capita &lt;- gdp_per_capita |&gt; select(-ncol(gdp_per_capita),-(ncol(gdp_per_capita)-1)\n  )\n\nstr(gdp_per_capita)\n\n\ntibble [27 × 4] (S3: tbl_df/tbl/data.frame)\n $ Year               : chr [1:27] \"1998\" \"1999\" \"2000\" \"2001\" ...\n $ mid_year_population: num [1:27] 62464 63364 64269 65166 66003 ...\n $ Value (TRY)        : num [1:27] 1152 1695 2668 3794 5486 ...\n $ change_rate_try    : chr [1:27] \"-\" \"47.125712213558103\" \"57.467281288589533\" \"42.198751767167977\" ...\n\n\n\n\nCode\nemissions_by_sector &lt;- read_excel(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sektorlere gore toplam sera gazi emisyonlari (co2 esdegeri) (1).xlsx\")  \n  \nemissions_by_sector &lt;- emissions_by_sector |&gt; select(-3)\n  \n\nstr(emissions_by_sector)\n\n\ntibble [34 × 6] (S3: tbl_df/tbl/data.frame)\n $ Year                                : num [1:34] 1990 1991 1992 1993 1994 ...\n $ Total                               : num [1:34] 228 236 242 250 243 ...\n $ Energy                              : num [1:34] 143 148 154 160 157 ...\n $ Industrial processes and product use: num [1:34] 23.1 24.9 24.6 25.1 24.5 ...\n $ Agriculture                         : num [1:34] 51.8 52.9 52.7 52.8 50.3 ...\n $ Waste                               : num [1:34] 10.3 10.7 11 11.3 11.7 ...\n\n\n\n\nCode\nemissions &lt;- read_excel(\"C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sera gazi emisyonlari (co2 esdegeri).xlsx\")  \n\nstr(emissions)\n\n\ntibble [34 × 6] (S3: tbl_df/tbl/data.frame)\n $ \nYear   : num [1:34] 1990 1991 1992 1993 1994 ...\n $ \nTotal  : num [1:34] 228 236 242 250 243 ...\n $ CO2        : num [1:34] 155 161 167 174 171 ...\n $ CH4        : num [1:34] 51.3 52.3 52.2 51.8 51.3 ...\n $ N2O        : num [1:34] 22.2 22 22.4 23.2 20.9 ...\n $ \nF-gases: num [1:34] 0.425 0.5 0.467 0.466 0.417 ...\n\n\n\n\nCode\nsave(Co2_emissions_by_sector, Co2_emissions_fuel_combustion, Co2_emissions_per_capita, electricity_cons_per_capita, electricity_final_consumption, electricity_generation_sources, renewables, modern_renewables, electricity_production, total_energy_supply,gdp_per_capita, emissions_by_sector, emissions, file=\"emissions.RData\")"
+  },
+  {
+    "objectID": "project.html#exploratory-data-analysis",
+    "href": "project.html#exploratory-data-analysis",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "3.1 Exploratory Data Analysis",
+    "text": "3.1 Exploratory Data Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#trend-analysis",
+    "href": "project.html#trend-analysis",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "3.2 Trend Analysis",
+    "text": "3.2 Trend Analysis\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#model-fitting",
+    "href": "project.html#model-fitting",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "3.3 Model Fitting",
+    "text": "3.3 Model Fitting\nxxxxxx"
+  },
+  {
+    "objectID": "project.html#results",
+    "href": "project.html#results",
+    "title": "Sustainability Goals in Türkiye: Energy, Emissions, and the Future",
+    "section": "3.4 Results",
+    "text": "3.4 Results\nxxxxxx"
+  }
+]
