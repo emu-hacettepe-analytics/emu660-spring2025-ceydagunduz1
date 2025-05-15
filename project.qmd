@@ -5,14 +5,13 @@ format:
     code-fold: true
 ---
 
-![](images/WhatsApp%20Image%202025-04-27%20at%2015.50.57-01.jpeg)
+![](images/Energy.jpg){style="opacity:0.7" width="554"}
 
 # 1. Project Overview and Scope
 
 > Energy production and consumption are among the primary drivers of climate change, as they are major sources of carbon emissions. The continuous rise in energy demand, fueled by economic growth and industrialization, directly accelerates carbon emissions. In this study, we aim to investigate the relationship between energy consumption and carbon emissions originating from the energy sector in Turkey over the years.
 >
 > First, correlation and regression analyses will be conducted to reveal the linear relationship between energy consumption and carbon emissions. Then, time series analysis will be applied to evaluate the trends of emissions and energy consumption over the years, the sectoral distribution of carbon emissions from the energy sector will also be examined, with a particular focus on emissions from electricity generation due to its dominant share.\
-> Additionally, the relationships between key indicators—such as energy intensity (primary energy consumption/GDP), per capita energy consumption, and per capita carbon emissions—will be analyzed to assess the potential for decoupling carbon emissions from economic growth.
 
 # 2. Data
 
@@ -42,122 +41,435 @@ Raising awareness on this issue is also one of the primary motivations behind th
 
 ## 2.4 Preprocessing
 
--   [My_R_Data](https://github.com/emu-hacettepe-analytics/emu660-spring2025-ceydagunduz1/blob/main/emissions.RData)
+[Emissions.RData](https://github.com/emu-hacettepe-analytics/emu660-spring2025-NimetSevinc/blob/main/emissions.RData)
 
 ```{r}
 
 library(readr)
 library(readxl)
 library(dplyr)
-
+library(ggplot2)
+library(tidyverse)
+library(ggthemes)
 ```
 
-```{r}
-Co2_emissions_by_sector <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions by sector in Turkiye.csv",show_col_types = FALSE)
-```
+**Co2_emissions_by_sector** –\> This is the data showing the distribution of sectoral CO2 emissions over the years.
 
 ```{r}
-Co2_emissions_fuel_combustion <- read_delim(
-  "C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions from fuel combustion, Turkiye (1).csv",
-  delim = ",",
-  show_col_types = FALSE
-)
+Co2_emissions_by_sector <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions by sector in Turkiye.csv",show_col_types = FALSE) |> rename("CO2 emissions by sector" = "CO2 emissions by sector in Turkiye") |> select(-4)
+
+str(Co2_emissions_by_sector)
+```
+
+**Co2_emissions_fuel_combustion**–\> The amount of CO2 emissions resulting from fossil fuel combustion.ı
+
+```{r}
+Co2_emissions_fuel_combustion <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions from fuel combustion, TUrkiye (1).csv",show_col_types = FALSE) |> rename("CO2 emissions from fuel combustion" = "CO2 emissions from fuel combustion Turkiye") |> select(-3)
 
 str(Co2_emissions_fuel_combustion)
 
 ```
 
-```{r}
-Co2_emissions_per_capita <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions per capita, Turkiye.csv")
+**Co2_emissions_per_cap** –\> The change in per capita CO2 emissions over the years.
 
-str(Co2_emissions_per_capita)
+```{r}
+Co2_emissions_per_cap <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - CO2 emissions per capita, Turkiye.csv",show_col_types = FALSE) |> rename("CO2 emissions per capita" = "CO2 emissions per capita Turkiye") |> select(-3)
+
+str(Co2_emissions_per_cap)
 ```
 
-```{r}
-electricity_cons_per_capita <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Electricity consumption per capita, Turkiye.csv")
+**electricity_cons_per_cap**–\> The change in per capita electricity consumption over the years.
 
-str(electricity_cons_per_capita)
+```{r}
+electricity_cons_per_cap <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Electricity consumption per capita, Turkiye.csv",show_col_types = FALSE) |> rename("Electricity consumption per capita (MWh)" = "Electricity consumption per capita Turkiye") |> select(-3)
+
+str(electricity_cons_per_cap)
 ```
 
+**electricity_final_consumption**–\> Final electricity consumption by sector
+
 ```{r}
-electricity_final_consumption <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity final consumption by sector in Turkiye.csv")
+electricity_final_consumption <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity final consumption by sector in Turkiye.csv",show_col_types = FALSE) |> rename("Electricity final consumption (TJ)" = "electricity final consumption by sector in Turkiye") |> na.omit(electricity_final_consumption) |> select(-4)
+
 
 str(electricity_final_consumption)
 sum(is.na(electricity_final_consumption))
 ```
 
+**electricity_generation_sources**–\> Electricity generation amount by production source.
+
 ```{r}
-electricity_generation_sources <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity generation sources in Turkiye.csv")
+electricity_generation_sources <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity generation sources in Turkiye.csv",show_col_types = FALSE) |> rename("Electricity generation sources (GWh)" = "electricity generation sources in Turkiye") |> na.omit(electricity_generation_sources) |> select(-4)
 
 str(electricity_generation_sources)
 ```
 
+**renewables**–\>The percentage of renewable energy sources used in electricity generation
+
 ```{r}
-renewables <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Renewables share of electricity generation, Turkiye.csv")
+renewables <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Renewables share of electricity generation, Turkiye.csv",show_col_types = FALSE) |> rename("Renewables share of electricity generation (%)" = "Renewables share of electricity generation Turkiye") |> select(-3)
+
 str(renewables)
 ```
 
-```{r}
-modern_renewables <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Share of modern renewables in final energy consumption (SDG 7.2), Turkiye (1).csv")
-
-str(modern_renewables)
-```
+**electricity_production**–\>Total electricity generation amount
 
 ```{r}
-electricity_production <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Total electricity production, Turkiye.csv")
+electricity_production <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - Total electricity production, Turkiye.csv",show_col_types = FALSE) |> rename("Total electricity production (GWh)" = "Total electricity production Turkiye") |> select(-3)
 
 str(electricity_production)
 ```
 
-```{r}
-total_energy_supply <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - total energy supply in Turkiye (2).csv")
-
-str(total_energy_supply)
-```
+**gdp_per_capita**–\>GDP (Gross Domestic Product)
 
 ```{r}
+
 gdp_per_capita <- read_excel("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/gdp_per_capita.xlsx")  
   
-gdp_per_capita <- gdp_per_capita |> select(-ncol(gdp_per_capita),-(ncol(gdp_per_capita)-1)
-  )
+gdp_per_capita <- gdp_per_capita |> select(c(-3,-4))
+  
 
 str(gdp_per_capita)
 ```
 
+**emissions_by_sector**–\>Emission distributions by sector
+
 ```{r}
-emissions_by_sector <- read_excel("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sektorlere gore toplam sera gazi emisyonlari (co2 esdegeri) (1).xlsx")  
-  
-emissions_by_sector <- emissions_by_sector |> select(-3)
-  
+emissions_by_sector <- read_excel("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sektorlere gore toplam sera gazi emisyonlari (co2 esdegeri) (1).xlsx") |> select(-3) |> slice(-1:-8)
+
 
 str(emissions_by_sector)
 ```
 
+**emissions**–\>Total emission values of all greenhouse gases (in carbon equivalent)
+
 ```{r}
-emissions <- read_excel("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sera gazi emisyonlari (co2 esdegeri).xlsx")  
+emissions <- read_excel("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/sera gazi emisyonlari (co2 esdegeri).xlsx") |> slice(-1:-8) |> rename(Year = "\r\nYear", Total = "\r\nTotal")
 
 str(emissions)
 ```
 
+We have converted the data to R data format for processing.
+
 ```{r}
-save(Co2_emissions_by_sector, Co2_emissions_fuel_combustion, Co2_emissions_per_capita, electricity_cons_per_capita, electricity_final_consumption, electricity_generation_sources, renewables, modern_renewables, electricity_production, total_energy_supply,gdp_per_capita, emissions_by_sector, emissions, file="emissions.RData")
+save(Co2_emissions_by_sector, Co2_emissions_fuel_combustion, Co2_emissions_per_cap, electricity_cons_per_cap, electricity_final_consumption,electricity_generation_sources, renewables, electricity_production, gdp_per_capita, emissions_by_sector, emissions, file="emissions.RData")
+```
+
+Our common column across the datasets is the year variable. In order to merge the datasets by year, we needed to convert the year columns to a single data type. Therefore, the year values were converted to "integer" format.
+
+```{r}
+gdp_per_capita$Year <- as.integer(gdp_per_capita$Year)
+Co2_emissions_by_sector$Year <- as.integer(Co2_emissions_by_sector$Year)
+Co2_emissions_fuel_combustion$Year <- as.integer(Co2_emissions_fuel_combustion$Year)
+Co2_emissions_per_cap$Year <- as.integer(Co2_emissions_per_cap$Year)
+electricity_cons_per_cap$Year <- as.integer(electricity_cons_per_cap$Year)
+electricity_final_consumption$Year <- as.integer(electricity_final_consumption$Year)
+electricity_generation_sources$Year <- as.integer(electricity_generation_sources$Year)
+electricity_production$Year <- as.integer(electricity_production$Year)
+emissions <- emissions |> mutate(Year = as.integer(Year))
+emissions_by_sector$Year <- as.integer(emissions_by_sector$Year)
+renewables$Year <- as.integer(renewables$Year)
+```
+
+We merged multiple tables to be used in the analysis by using the year column as the common key.
+
+```{r}
+#sektör bazlı/grup olmayanları masterdataya ekledim.
+yil_ortakli <- gdp_per_capita |>
+  left_join(Co2_emissions_fuel_combustion, by="Year") |>
+  left_join(Co2_emissions_per_cap, by="Year") |>
+  left_join(Co2_emissions_by_sector, by="Year") |>
+  left_join(electricity_cons_per_cap, by="Year") |>
+  left_join(electricity_production, by="Year") |>
+  left_join(emissions, by="Year") |>
+  left_join(emissions_by_sector, by="Year") |>
+  left_join(renewables, by="Year") 
+
+yil_ortakli <- yil_ortakli |> mutate(Year = ifelse(is.na(Year), 2024, Year))
+#str(yil_ortakli)
+#summary(yil_ortakli)
 ```
 
 # 3. Analysis
 
-xxxxxx
+In the first stage of this section, exploratory data analysis was conducted to better understand the details of the data. The datasets prepared for the analysis were visualized to make them interpretable and suitable for drawing insights. After understanding the data details and their relationships, time series and regression analyses were applied to make predictions about CO2 emissions.
 
 ## 3.1 Exploratory Data Analysis
 
-xxxxxx
+When examining the change in CO2 emissions over the years, an increasing trend is observed. Population growth also plays a role in this rise.
+
+Emissions from the electricity sector have increased significantly, reaching the highest levels among all sectors. This is followed by the transportation and industry sectors, both with high emission values. Emissions related to the residential sector have increased at a slower pace. Emission values in other sectors remain relatively low.
+
+```{r}
+library(ggplot2)
+library(ggthemes)
+Co2_emissions_by_sector |> ggplot() + geom_point(aes(x=Year, y=Value, color=`CO2 emissions by sector`)) + ylab("Value of Co2 emissions") + ggtitle("CO2 Emissions by Sector Over the Years") + theme_minimal() + theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    axis.title = element_text(size = 8),
+    axis.text = element_text(size = 8),
+    axis.title.x = element_text(margin = margin(t = 10)), 
+    axis.title.y = element_text(margin = margin(r = 10)),  
+    legend.position = "right",
+    legend.text = element_text(size = 7)
+  )
+```
+
+We observe that the industrial sector is the largest consumer of electricity. The residential and commercial sectors also have high levels of electricity consumption. In recent years, with the increasing use of electric vehicles, small increases have been observed in the transportation sector. In contrast, almost no increase has been seen in the agriculture and fisheries sectors. The low electricity consumption in these two sectors despite population growth may indicate a decline in their operational capacity.
+
+```{r}
+electricity_final_consumption |> ggplot() + geom_point(aes(x=Year, y=Value/10^3,color =`Electricity final consumption (TJ)`)) + ggtitle("Electricty Final Consumption Over the Years")+ theme_minimal() + theme(
+    plot.title = element_text(size = 12, face = "bold"),
+    axis.title = element_text(size = 8),
+    axis.text = element_text(size = 8),
+    axis.title.x = element_text(margin = margin(t = 10)), 
+    axis.title.y = element_text(margin = margin(r = 10)),  
+    legend.position = "right",
+    legend.text = element_text(size = 7)
+  )
+```
+
+The annual distribution of energy sources used for electricity generation has changed as follows:
+
+```{r}
+#install.packages("plotly")
+#install.packages("streamgraph")
+#install.packages("ggstream")
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(ggstream)
+library(streamgraph)
+library(plotly)
+
+
+kaynak_tipi <- read_csv("C:/GitHub/emu660-spring2025-ceydagunduz1/project_data/International Energy Agency - electricity generation sources in Turkiye.csv")
+
+wide_format <- kaynak_tipi %>% 
+  group_by(Year, kaynak = `electricity generation sources in Turkiye`) %>%
+  summarise(toplam = sum(Value, na.rm = TRUE)) %>%  
+  pivot_wider(names_from = kaynak, values_from = toplam)
+
+long_data <- wide_format %>%
+  pivot_longer(-Year, names_to = "Sector", values_to = "gwh") %>%
+  group_by(Year) %>%
+  mutate(yuzde = gwh/sum(gwh, na.rm=TRUE) * 100) 
+
+aa <- plot_ly(long_data, x = ~Sector, 
+              y = ~yuzde, 
+              frame = ~Year, 
+              type = 'bar',
+              color = ~Sector)
+
+aa
+```
+
+The percentage change in emissions by sector is as follows:
+
+```{r}
+emissions_by_sector <-yil_ortakli |> group_by(Year) |> pivot_longer(cols = Energy:Waste,
+                            names_to = "Emissions_sector",
+                            values_to = "Emission_Value") |> mutate(Percentage = Emission_Value/sum(Value)*100)
+
+plot_ly(emissions_by_sector,
+        labels = ~Emissions_sector,
+        values = ~Emission_Value,
+        frame = ~Year,
+        type = 'pie',
+        textinfo = 'percent',
+        insidetextorientation = 'radial')
+```
+
+Strong correlation results have shown that as the population increases, CO₂ emissions from fuel sources also rise. Additionally, as per capita electricity consumption increases, per capita CO₂ emissions also increase. A strong positive relationship has been observed between electricity generation and economic growth (GDP).
+
+The share of renewable energy sources has not shown a directly negative relationship with other variables in the system at this stage. This may be due to its relatively low share in total energy usage.
+
+```{r}
+#install.packages("ggcorrplot")
+library(ggcorrplot)
+veri <- yil_ortakli[,c("mid_year_population",
+                      "value_usd",
+                      "CO2 emissions from fuel combustion",
+                      "CO2 emissions per capita",
+                      "Electricity consumption per capita (MWh)",
+                      "Total electricity production (GWh)",
+                      "Renewables share of electricity generation (%)")] 
+
+core_1 <-cor(veri, use="complete.obs")
+
+
+eksen_isim <- c("Population","GDP","CO2 From Fuel","CO2 Per Capita","Electricity Use Per Capita", "Electricity Production Total","Renewables Share Electricity")
+
+colnames(core_1) <- eksen_isim
+rownames(core_1) <- eksen_isim
+
+ggcorrplot(core_1,lab=T,lab_size=3,type="lower",tl.cex=8,tl.srt=45) 
+
+```
+
+The heatmap below shows the correlations between per capita CO₂ emissions and electricity generation sources. The graph indicates a very high correlation coefficient between coal and CO₂ emissions, suggesting that coal use in electricity production is one of the main contributors to the increase in emissions. Renewable sources such as wind, geothermal, and hydro also show a positive correlation. However, this may not be due to their direct contribution to emissions, but rather because their increasing share in electricity production coincides with an overall rise in total generation and emissions. A negative correlation is observed for oil (r = –0.88). Since oil has a relatively small share in electricity production, its reduction has little effect on decreasing total emissions.
+
+```{r}
+library(dplyr)
+library(ggplot2)
+library(tibble)
+
+co2 <- Co2_emissions_per_cap
+elec <- electricity_generation_sources
+
+elec_wide <- elec |>
+  pivot_wider(names_from = `Electricity generation sources (GWh)`,
+              values_from = Value)
+
+# Verileri yıl üzerinden birleştir
+yil_ortakli_2 <- left_join(co2, elec_wide, by = "Year")
+
+core_2 <- yil_ortakli_2 %>%
+  select(`CO2 emissions per capita`, Coal, `Natural gas`, Oil, Hydro, Wind, Geothermal) %>%
+  mutate(across(everything(), as.numeric))
+
+kore_matris <- cor(core_2, use = "complete.obs")
+
+corr <- as.data.frame(kore_matris[, "CO2 emissions per capita"])
+corr <- rownames_to_column(corr, var = "Source")
+colnames(corr)[2] <- "Correlation"
+
+
+corr <- corr %>% filter(Source != "CO2_per_capita") #kendiyle kıyası kaldırdık
+
+ggplot(corr, aes(x = "CO2_per_capita", y = reorder(Source, Correlation), fill = Correlation)) +
+  geom_tile(width = 0.5) +
+  geom_text(aes(label = round(Correlation, 2)), color = "white", size = 4) +
+  scale_fill_gradient2(low = "blue", high = "red", mid = "white", midpoint = 0) +
+  labs(title = "Correlation of CO2 Emissions and Electricity Production Sources",
+       x = "", y = "Reosource") +
+  theme_minimal() +
+  theme(axis.text.x = element_blank(),
+        axis.ticks.x = element_blank(),
+        axis.title.x = element_text(margin = margin(t = 10)), 
+        axis.title.y = element_text(margin = margin(r = 10)),
+        plot.title = element_text(size = 11
+                                  , face = "bold"))
+```
 
 ## 3.2 Trend Analysis
 
-xxxxxx
+```{r}
+library(broom)
+regres_1 <- lm(`CO2 emissions per capita` ~ `Electricity consumption per capita (MWh)`, data=yil_ortakli)
+summary(regres_1)
+tidy(regres_1)
+
+regres_1 |> glance() |> pull(r.squared)
+regres_1 |> glance() |> pull(sigma)
+```
+
+```{r}
+library(dplyr)
+library(ggplot2)
+
+
+
+explanatory_data <- tibble(`Electricity consumption per capita (MWh)`= c(1.3, 1.5,2,3.5,3.7,4))
+predict(regres_1,explanatory_data)
+prediction_data <- explanatory_data |> mutate(
+  `CO2 emissions per capita` = predict(regres_1,explanatory_data ))
+
+ggplot(yil_ortakli, aes(x = `Electricity consumption per capita (MWh)`, y=`CO2 emissions per capita`)) +
+  geom_point() +
+  geom_smooth(method="lm") + geom_point(data=prediction_data, shape=15, size=2,color="red")
+```
 
 ## 3.3 Model Fitting
 
-xxxxxx
+```{r}
+library(forecast)
+library(fpp2)
+electric <- electricity_production$`Total electricity production (GWh)`
+myts <- ts(data=electric, start = c(2000), frequency = 1)
+# myts |> ets(lambda = -0.57) |> forecast(h=5) |> autoplot()
+
+fit <- auto.arima(myts)
+checkresiduals(fit)
+redisualsok <- TRUE
+autoplot(myts)
+
+summary(fit)
+```
+
+```{r}
+electric <- electricity_production$`Total electricity production (GWh)`
+myts <- ts(data=electric, start = c(2000), frequency = 1)
+
+fets <- function(x, h) {
+  forecast(ets(x), h = h)
+}
+
+farima <- function(x, h) {
+  forecast(auto.arima(x), h=h)
+}
+
+e1 <- tsCV(myts,fets, h=1)
+e2 <- tsCV(myts, farima, h=1)
+print(mean(e1^2, na.rm=TRUE))
+print(mean(e2^2, na.rm=TRUE))
+
+myts %>% farima(h=10) %>% autoplot()
+```
+
+```{r}
+clean_data <- na.omit(yil_ortakli)
+
+lin_reg_1 = lm(Total.x ~ `Total electricity production (GWh)` + 
+                             `Renewables share of electricity generation (%)`, 
+               data = clean_data)
+
+fitted_values <- predict(lin_reg_1)
+
+future_data <- data.frame(
+  check.names = FALSE,
+  `Total electricity production (GWh)` = c(330000, 340000, 350000, 370000, 400000, 450000),
+  `Renewables share of electricity generation (%)` = c(35, 38, 40, 43, 45, 50)
+)
+future_years <- 2024:2029
+
+forecasted_values <- predict(lin_reg_1, newdata = future_data)
+
+df_actual <- data.frame(
+  Year = clean_data$Year,
+  CO2 = clean_data$Total.x,
+  Type = "Actual"
+)
+
+df_fitted <- data.frame(
+  Year = clean_data$Year,
+  CO2 = fitted_values,
+  Type = "Fitted"
+)
+
+df_forecast <- data.frame(
+  Year = future_years,
+  CO2 = forecasted_values,
+  Type = "Forecasted"
+)
+
+df_all <- rbind(df_actual, df_fitted, df_forecast)
+
+library(ggplot2)
+
+ggplot(df_all, aes(x = Year, y = CO2, color = Type, linetype = Type)) +
+  geom_line(size = 1.2) +
+  geom_point(size = 2) +
+  scale_color_manual(values = c("Actual" = "black", "Fitted" = "blue", "Forecasted" = "red")) +
+  scale_linetype_manual(values = c("Actual" = "solid", "Fitted" = "dashed", "Forecasted" = "dotdash")) +
+  ggtitle("Actual, Fitted, and Forecasted CO2 Emissions") +
+  ylab("CO2 Emissions") + xlab("Year") +
+  theme_minimal() +
+  theme(plot.title = element_text(face = "bold", size = 14))
+
+# Gelecek yılların tahmin değerlerini yazdır
+print(df_forecast)
+
+```
 
 ## 3.4 Results
 
